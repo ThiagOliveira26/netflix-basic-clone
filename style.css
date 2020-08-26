@@ -8,6 +8,11 @@
     color: white;
 }
 
+body{
+    width: auto;
+    height: auto;
+}
+
 header{
     height:68px;
     display: flex;
@@ -23,8 +28,8 @@ header .logo{
 }
 
 header .logout {
-    /* width: 8vw; */
-    height: 10vh;
+     width: 60px; 
+    /* height: 10vh; */
     border-radius: 50%
 }
 
@@ -103,8 +108,46 @@ header .nav button:hover{
     padding-top: 5rem;
 }
 
+.description .help{
+    display: none;
+}
 .slide{
     padding-top: 5px;
     background-color: black;
 }
 
+@media (max-width: 700px){
+    body {
+        background-color: red;
+    }
+
+    .movie h1{
+        padding-top: 5rem;
+        font-size: 3rem;
+        padding-bottom: 3rem;
+        padding-right: 0px;
+    }
+
+    .movie p{
+        padding-right: 2rem;
+        padding-bottom: 10rem;
+    }
+
+    .description {
+        margin: auto;
+        width: 150px;
+        /* font-size: 14px; */
+        padding-top: 180px;
+    }
+}
+
+@media (max-width: 400px){
+    .movie{
+        display: none;
+    }
+
+    .description .help{
+        display: flex;
+        flex-direction: column;
+    }
+}
